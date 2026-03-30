@@ -1,4 +1,5 @@
 from prefect import flow
+from prefect import deployments
 from prefect_github.repository import GitHubRepository
 
 if __name__ == "__main__":
@@ -12,3 +13,7 @@ if __name__ == "__main__":
         build=False,
         push=False,
     )
+
+deployments.deploy(
+    
+)
